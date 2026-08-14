@@ -1,0 +1,30 @@
+name: Optimize 591 runtime
+
+on:
+  push:
+    paths:
+      - '.github/optimization-request.json'
+
+permissions:
+  contents: write
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Apply guarded runtime optimizations
+        run: python3 .github/scripts/optimize-runtime.py
+      - name: Commit optimized source
+        run: |
+          if git diff --quiet -- notify-bot/src; then
+            echo "No source changes produced"
+            exit 0
+          fi
+          git config user.name "runtime-optimizer"
+          git config user.email "horn0939161373@gmail.com"
+          git add notify-bot/src
+          git commit -m "optimize: reduce scrape overhead and harden state writes"
+          git push
