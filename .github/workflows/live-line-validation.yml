@@ -1,0 +1,50 @@
+name: Live LINE validation
+
+on:
+  push:
+    paths:
+      - '.github/live-validation/request.json'
+
+permissions:
+  contents: read
+
+jobs:
+  validate-line:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Send validation message to first active subscriber
+        env:
+          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          SUBSCRIPTIONS_URL: ${{ secrets.SUBSCRIPTIONS_URL }}
+        run: |
+          node - <<'NODE'
+          (async () => {
+            if (!process.env.LINE_CHANNEL_ACCESS_TOKEN) throw new Error('missing LINE token');
+            if (!process.env.SUBSCRIPTIONS_URL) throw new Error('missing subscriptions URL');
+            const sres = await fetch(process.env.SUBSCRIPTIONS_URL);
+            if (!sres.ok) throw new Error(`subscriptions fetch failed: ${sres.status}`);
+            const data = await sres.json();
+            const rows = Array.isArray(data) ? data : (Array.isArray(data.subscriptions) ? data.subscriptions : []);
+            const sub = rows.find(x => x && x.userId && x.enabled !== false);
+            if (!sub) throw new Error('no active subscriber');
+            const now = new Intl.DateTimeFormat('zh-TW', {
+              timeZone: 'Asia/Taipei', year: 'numeric', month: '2-digit', day: '2-digit',
+              hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false
+            }).format(new Date());
+            const text = `✅ 591 租屋通知：LINE 推播通道驗證成功\n台北時間 ${now}\n（這是系統測試訊息，不是新物件通知）`;
+            const res = await fetch('https://api.line.me/v2/bot/message/push', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${process.env.LINE_CHANNEL_ACCESS_TOKEN}`
+              },
+              body: JSON.stringify({ to: sub.userId, messages: [{ type: 'text', text }] })
+            });
+            if (!res.ok) throw new Error(`LINE push failed: ${res.status} ${(await res.text()).slice(0, 200)}`);
+            console.log('LINE validation push succeeded');
+          })().catch(err => { console.error(err); process.exit(1); });
+          NODE
