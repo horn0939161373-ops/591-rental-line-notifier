@@ -1,0 +1,48 @@
+name: Validate 591 source
+
+on:
+  push:
+    paths:
+      - 'notify-bot/src/**'
+      - 'notify-bot/package.json'
+      - 'notify-bot/package-lock.json'
+      - '.github/workflows/validate-source.yml'
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        working-directory: notify-bot
+        run: npm ci
+      - name: Syntax check all runtime modules
+        working-directory: notify-bot
+        run: |
+          for f in src/*.js; do
+            node --check "$f"
+          done
+      - name: State module smoke test
+        working-directory: notify-bot
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const os = require('os');
+          const path = require('path');
+          const { saveSeenIds, loadSeenIds } = require('./src/state');
+          const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'rental-state-'));
+          const file = path.join(dir, 'seen.json');
+          saveSeenIds(file, ['a', 'b', 'a']);
+          const values = loadSeenIds(file);
+          if (!Array.isArray(values) || !values.includes('a') || !values.includes('b')) {
+            throw new Error('state round-trip failed');
+          }
+          console.log('state smoke test passed');
+          NODE
