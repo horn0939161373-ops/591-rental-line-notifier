@@ -10,6 +10,7 @@
 const { chromium } = require('playwright');
 
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
+const SCRAPE_DEBUG = process.env.SCRAPE_DEBUG === '1';
 
 function buildListUrl(filter) {
   const params = new URLSearchParams();
@@ -310,7 +311,7 @@ async function _fetchOnce(url) {
     const items = await extractListings(page);
     const statusCode = response ? response.status() : 0;
 
-    if (items.length > 0) {
+    if (items.length > 0 && SCRAPE_DEBUG) {
       // 除錯用：研究能不能做「距離篩選」，先看頁面上有沒有現成的地址/
       // 經緯度資料可以用（例如 Vue SSR 常見的全域初始狀態物件），這樣才
       // 不用另外呼叫地理編碼 API 或多開一堆物件詳情頁。

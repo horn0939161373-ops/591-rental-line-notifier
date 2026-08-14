@@ -6,6 +6,12 @@ const fs = require('fs');
 
 const MAX_KEEP = 500;
 
+function writeJsonAtomic(path, value) {
+  const tmp = `${path}.${process.pid}.tmp`;
+  fs.writeFileSync(tmp, JSON.stringify(value, null, 2) + '\n');
+  fs.renameSync(tmp, path);
+}
+
 function loadSeenIds(path) {
   try {
     const raw = fs.readFileSync(path, 'utf8');
@@ -18,7 +24,7 @@ function loadSeenIds(path) {
 
 function saveSeenIds(path, ids) {
   const trimmed = ids.slice(-MAX_KEEP);
-  fs.writeFileSync(path, JSON.stringify(trimmed, null, 2) + '\n');
+  writeJsonAtomic(path, trimmed);
 }
 
 /** 讀取保留下來的完整物件資料（不只 id，還有標題/價格/圖片/連結），用物件 id 當 key */
@@ -57,7 +63,7 @@ function saveListingsData(path, listings, existing) {
   const entries = Object.values(merged).sort((a, b) => (a.scrapedAt < b.scrapedAt ? -1 : 1));
   const trimmed = entries.slice(-MAX_KEEP);
   const result = Object.fromEntries(trimmed.map(item => [item.id, item]));
-  fs.writeFileSync(path, JSON.stringify(result, null, 2) + '\n');
+  writeJsonAtomic(path, result);
   return result;
 }
 
@@ -79,7 +85,7 @@ function saveSubscriberSeen(path, seenByUser) {
   for (const [userId, ids] of Object.entries(seenByUser)) {
     out[userId] = (Array.isArray(ids) ? ids : []).slice(-MAX_KEEP);
   }
-  fs.writeFileSync(path, JSON.stringify(out, null, 2) + '\n');
+  writeJsonAtomic(path, out);
 }
 
 module.exports = {
