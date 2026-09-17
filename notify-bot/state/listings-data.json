@@ -21,7 +21,7 @@
     "price": 7500,
     "cover": "https://img2.591.com.tw/house/2023/08/08/169146348025557858.jpg!400x300.jpg",
     "url": "https://rent.591.com.tw/15660466",
-    "scrapedAt": "2026-09-17T05:56:13.696Z"
+    "scrapedAt": "2026-09-17T06:26:06.609Z"
   },
   "16322848": {
     "id": "16322848",
@@ -246,14 +246,6 @@
     "cover": "https://img1.591.com.tw/house/2026/07/06/178333723567219905.jpg!400x300.jpg",
     "url": "https://rent.591.com.tw/21728694",
     "scrapedAt": "2026-07-30T11:59:48.898Z"
-  },
-  "21730680": {
-    "id": "21730680",
-    "title": "近鼓山三路、鼓山高中套房出租(交通便利)學生族群另有優惠",
-    "price": 7500,
-    "cover": "https://img2.591.com.tw/house/2025/12/13/176559569039753305.jpg!400x300.jpg",
-    "url": "https://rent.591.com.tw/21730680",
-    "scrapedAt": "2026-07-30T09:26:24.677Z"
   },
   "21731419": {
     "id": "21731419",
@@ -1853,7 +1845,7 @@
     "price": 14000,
     "cover": "https://img2.591.com.tw/house/2024/07/02/171991654614762409.jpeg!400x300.jpeg",
     "url": "https://rent.591.com.tw/21848892",
-    "scrapedAt": "2026-09-17T05:56:13.696Z"
+    "scrapedAt": "2026-09-17T06:26:06.609Z"
   },
   "21849358": {
     "id": "21849358",
@@ -3947,17 +3939,17 @@
     "id": "22024178",
     "title": "鄰近學校、西子灣渡輪碼頭、捷運、輕軌",
     "price": 9500,
-    "cover": "https://img1.591.com.tw/house/2026/09/16/178954538522951006.jpeg!400x300.jpeg",
+    "cover": "https://img2.591.com.tw/house/2026/09/16/178954538522951006.jpeg!400x300.jpeg",
     "url": "https://rent.591.com.tw/22024178",
-    "scrapedAt": "2026-09-17T05:56:13.696Z"
+    "scrapedAt": "2026-09-17T06:26:06.609Z"
   },
   "22024207": {
     "id": "22024207",
     "title": "學生套房出租",
     "price": 9500,
-    "cover": "https://img2.591.com.tw/house/2026/09/16/178954569116764305.jpg!400x300.jpg",
+    "cover": "https://img1.591.com.tw/house/2026/09/16/178954569116764305.jpg!400x300.jpg",
     "url": "https://rent.591.com.tw/22024207",
-    "scrapedAt": "2026-09-17T05:56:13.696Z"
+    "scrapedAt": "2026-09-17T06:26:06.609Z"
   },
   "22024302": {
     "id": "22024302",
@@ -3965,7 +3957,7 @@
     "price": 13500,
     "cover": "https://images.591.com.tw/index/house/newVersion/noImgBigNew.png",
     "url": "https://rent.591.com.tw/22024302",
-    "scrapedAt": "2026-09-17T05:56:13.696Z"
+    "scrapedAt": "2026-09-17T06:26:06.609Z"
   },
   "22024904": {
     "id": "22024904",
@@ -3973,23 +3965,23 @@
     "price": 9900,
     "cover": "https://img2.591.com.tw/house/2023/08/25/169295461637189731.jpg!400x300.jpg",
     "url": "https://rent.591.com.tw/22024904",
-    "scrapedAt": "2026-09-17T05:56:13.696Z"
+    "scrapedAt": "2026-09-17T06:26:06.609Z"
   },
   "22025112": {
     "id": "22025112",
     "title": "新樂愛河商圈電梯獨立門牌套房近捷運駁二真愛碼頭📞愛窩",
     "price": 12000,
-    "cover": "https://img2.591.com.tw/house/2022/09/26/166418816836968709.jpg!400x300.jpg",
+    "cover": "https://img1.591.com.tw/house/2022/09/26/166418816836968709.jpg!400x300.jpg",
     "url": "https://rent.591.com.tw/22025112",
-    "scrapedAt": "2026-09-17T05:56:13.696Z"
+    "scrapedAt": "2026-09-17T06:26:06.609Z"
   },
   "22025277": {
     "id": "22025277",
     "title": "愛河幸福川旁分租套房",
     "price": 9000,
-    "cover": "https://img1.591.com.tw/house/2026/09/16/178955624077770007.jpg!400x300.jpg",
+    "cover": "https://img2.591.com.tw/house/2026/09/16/178955624077770007.jpg!400x300.jpg",
     "url": "https://rent.591.com.tw/22025277",
-    "scrapedAt": "2026-09-17T05:56:13.696Z"
+    "scrapedAt": "2026-09-17T06:26:06.609Z"
   },
   "22026690": {
     "id": "22026690",
@@ -3997,6 +3989,14 @@
     "price": 11700,
     "cover": "https://img2.591.com.tw/house/2025/12/12/176553607472506706.jpg!400x300.jpg",
     "url": "https://rent.591.com.tw/22026690",
-    "scrapedAt": "2026-09-17T05:56:13.696Z"
+    "scrapedAt": "2026-09-17T06:26:06.609Z"
+  },
+  "22029346": {
+    "id": "22029346",
+    "title": "新崛江twGGG五福路心田路中山路中華路",
+    "price": 7500,
+    "cover": "https://img1.591.com.tw/house/2017/10/25/150889045131286701.jpg!400x300.jpg",
+    "url": "https://rent.591.com.tw/22029346",
+    "scrapedAt": "2026-09-17T06:26:06.609Z"
   }
 }
