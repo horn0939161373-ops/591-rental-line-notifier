@@ -117,7 +117,7 @@
     "price": 6000,
     "cover": "https://img2.591.com.tw/house/2026/08/05/178589759049712109.jpg!400x300.jpg",
     "url": "https://rent.591.com.tw/21771615",
-    "scrapedAt": "2026-09-08T10:26:22.868Z"
+    "scrapedAt": "2026-10-21T02:26:08.019Z"
   },
   "21808473": {
     "id": "21808473",
@@ -166,14 +166,6 @@
     "cover": "https://img1.591.com.tw/house/2026/08/30/178809658388360006.jpg!400x300.jpg",
     "url": "https://rent.591.com.tw/21921741",
     "scrapedAt": "2026-09-01T07:42:16.368Z"
-  },
-  "21923235": {
-    "id": "21923235",
-    "title": "可租補、可養寵物、中山大學近新大套房",
-    "price": 8000,
-    "cover": "https://img2.591.com.tw/house/2026/08/31/178814171394501408.jpg!400x300.jpg",
-    "url": "https://rent.591.com.tw/21923235",
-    "scrapedAt": "2026-08-31T14:27:54.414Z"
   },
   "21923262": {
     "id": "21923262",
@@ -589,7 +581,7 @@
     "price": 7000,
     "cover": "https://img2.591.com.tw/house/2026/10/05/179119178230949302.jpg!400x300.jpg",
     "url": "https://rent.591.com.tw/21950909",
-    "scrapedAt": "2026-10-21T01:56:06.933Z"
+    "scrapedAt": "2026-10-21T02:26:08.019Z"
   },
   "21951359": {
     "id": "21951359",
@@ -3949,54 +3941,62 @@
     "price": 6000,
     "cover": "https://img2.591.com.tw/house/2026/10/20/179249775700856605.jpg!400x300.jpg",
     "url": "https://rent.591.com.tw/22211890",
-    "scrapedAt": "2026-10-21T01:56:06.933Z"
+    "scrapedAt": "2026-10-21T02:26:08.019Z"
   },
   "22212353": {
     "id": "22212353",
     "title": "中迪房屋🏠免追垃圾車大套房|七賢路|中華三路",
     "price": 5800,
-    "cover": "https://img2.591.com.tw/house/2026/10/20/179249825045371206.jpg!400x300.jpg",
+    "cover": "https://img1.591.com.tw/house/2026/10/20/179249825045371206.jpg!400x300.jpg",
     "url": "https://rent.591.com.tw/22212353",
-    "scrapedAt": "2026-10-21T01:56:06.933Z"
+    "scrapedAt": "2026-10-21T02:26:08.019Z"
   },
   "22212648": {
     "id": "22212648",
     "title": "🍀可入戶籍🍀免服務費🍀可申請租補貼",
     "price": 8500,
-    "cover": "https://img2.591.com.tw/house/2026/10/20/179250161285374409.jpg!400x300.jpg",
+    "cover": "https://img1.591.com.tw/house/2026/10/20/179250161285374409.jpg!400x300.jpg",
     "url": "https://rent.591.com.tw/22212648",
-    "scrapedAt": "2026-10-21T01:56:06.933Z"
+    "scrapedAt": "2026-10-21T02:26:08.019Z"
   },
   "22212995": {
     "id": "22212995",
     "title": "一佳租賃🏆近捷運明亮大套房",
     "price": 7500,
-    "cover": "https://img2.591.com.tw/house/2026/10/20/179250597835638302.jpeg!400x300.jpeg",
+    "cover": "https://img1.591.com.tw/house/2026/10/20/179250597835638302.jpeg!400x300.jpeg",
     "url": "https://rent.591.com.tw/22212995",
-    "scrapedAt": "2026-10-21T01:56:06.933Z"
+    "scrapedAt": "2026-10-21T02:26:08.019Z"
   },
   "22213107": {
     "id": "22213107",
     "title": "好房子.好乾淨.好方便",
     "price": 6000,
-    "cover": "https://img1.591.com.tw/house/2025/07/18/175282038436988808.jpeg!400x300.jpeg",
+    "cover": "https://img2.591.com.tw/house/2025/07/18/175282038436988808.jpeg!400x300.jpeg",
     "url": "https://rent.591.com.tw/22213107",
-    "scrapedAt": "2026-10-21T01:56:06.933Z"
+    "scrapedAt": "2026-10-21T02:26:08.019Z"
   },
   "22213443": {
     "id": "22213443",
     "title": "近中央公園大立百貨大同醫院",
     "price": 7500,
-    "cover": "https://img2.591.com.tw/house/2023/03/06/167809246022163202.jpg!400x300.jpg",
+    "cover": "https://img1.591.com.tw/house/2023/03/06/167809246022163202.jpg!400x300.jpg",
     "url": "https://rent.591.com.tw/22213443",
-    "scrapedAt": "2026-10-21T01:56:06.933Z"
+    "scrapedAt": "2026-10-21T02:26:08.019Z"
   },
   "22213577": {
     "id": "22213577",
     "title": "設計師獨套房",
     "price": 7500,
-    "cover": "https://img1.591.com.tw/house/2023/08/08/169146348025557858.jpg!400x300.jpg",
+    "cover": "https://img2.591.com.tw/house/2023/08/08/169146348025557858.jpg!400x300.jpg",
     "url": "https://rent.591.com.tw/22213577",
-    "scrapedAt": "2026-10-21T01:56:06.933Z"
+    "scrapedAt": "2026-10-21T02:26:08.019Z"
+  },
+  "22214423": {
+    "id": "22214423",
+    "title": "輕軌文武聖殿站★5房公寓4F★",
+    "price": 15000,
+    "cover": "https://img1.591.com.tw/house/2026/08/06/178599933073080809.jpg!400x300.jpg",
+    "url": "https://rent.591.com.tw/22214423",
+    "scrapedAt": "2026-10-21T02:26:08.019Z"
   }
 }
