@@ -247,14 +247,6 @@
     "url": "https://rent.591.com.tw/22010060",
     "scrapedAt": "2026-09-18T11:43:13.439Z"
   },
-  "22012042": {
-    "id": "22012042",
-    "title": "站前大套房-東寶大樓11樓（三間可供選擇）室內約八坪",
-    "price": 7590,
-    "cover": "https://img1.591.com.tw/house/2025/06/05/174911710847720509.jpg!400x300.jpg",
-    "url": "https://rent.591.com.tw/22012042",
-    "scrapedAt": "2026-09-15T05:56:22.498Z"
-  },
   "22012792": {
     "id": "22012792",
     "title": "臨海二905可租補中山大學電梯採光萌寵套房近捷運📞愛窩",
@@ -2477,7 +2469,7 @@
     "price": 5500,
     "cover": "https://img1.591.com.tw/house/2026/10/14/179199217677344300.jpg!400x300.jpg",
     "url": "https://rent.591.com.tw/22180096",
-    "scrapedAt": "2026-11-06T04:56:00.388Z"
+    "scrapedAt": "2026-11-06T05:33:15.670Z"
   },
   "22180516": {
     "id": "22180516",
@@ -3939,9 +3931,9 @@
     "id": "22297318",
     "title": "👉中迪房屋，社會住宅👈公園前稀有兩房",
     "price": 10000,
-    "cover": "https://img1.591.com.tw/house/2026/11/05/179386704472140002.jpg!400x300.jpg",
+    "cover": "https://img2.591.com.tw/house/2026/11/05/179386704472140002.jpg!400x300.jpg",
     "url": "https://rent.591.com.tw/22297318",
-    "scrapedAt": "2026-11-06T04:56:00.388Z"
+    "scrapedAt": "2026-11-06T05:33:15.670Z"
   },
   "22297587": {
     "id": "22297587",
@@ -3949,7 +3941,7 @@
     "price": 6500,
     "cover": "https://images.591.com.tw/index/house/newVersion/noImgBigNew.png",
     "url": "https://rent.591.com.tw/22297587",
-    "scrapedAt": "2026-11-06T04:56:00.388Z"
+    "scrapedAt": "2026-11-06T05:33:15.670Z"
   },
   "22298074": {
     "id": "22298074",
@@ -3957,15 +3949,15 @@
     "price": 10000,
     "cover": "https://img2.591.com.tw/house/2026/09/08/178886333697833407.jpg!400x300.jpg",
     "url": "https://rent.591.com.tw/22298074",
-    "scrapedAt": "2026-11-06T04:56:00.388Z"
+    "scrapedAt": "2026-11-06T05:33:15.670Z"
   },
   "22298254": {
     "id": "22298254",
     "title": "{租補}小資首選~聯合醫院站~中華一路~精緻住宅",
     "price": 10000,
-    "cover": "https://img2.591.com.tw/house/2026/11/05/179387478766998906.jpg!400x300.jpg",
+    "cover": "https://img1.591.com.tw/house/2026/11/05/179387478766998906.jpg!400x300.jpg",
     "url": "https://rent.591.com.tw/22298254",
-    "scrapedAt": "2026-11-06T04:56:00.388Z"
+    "scrapedAt": "2026-11-06T05:33:15.670Z"
   },
   "22299440": {
     "id": "22299440",
@@ -3973,15 +3965,15 @@
     "price": 6000,
     "cover": "https://img1.591.com.tw/house/2026/11/05/179388685292868202.jpg!400x300.jpg",
     "url": "https://rent.591.com.tw/22299440",
-    "scrapedAt": "2026-11-06T04:56:00.388Z"
+    "scrapedAt": "2026-11-06T05:33:15.670Z"
   },
   "22300045": {
     "id": "22300045",
     "title": "社會住宅🏠鹽埕精華區河景第一排高CP值大坪數獨立套房",
     "price": 7000,
-    "cover": "https://img2.591.com.tw/house/2026/11/06/179389580835006107.jpg!400x300.jpg",
+    "cover": "https://img1.591.com.tw/house/2026/11/06/179389580835006107.jpg!400x300.jpg",
     "url": "https://rent.591.com.tw/22300045",
-    "scrapedAt": "2026-11-06T04:56:00.388Z"
+    "scrapedAt": "2026-11-06T05:33:15.670Z"
   },
   "22301214": {
     "id": "22301214",
@@ -3989,14 +3981,22 @@
     "price": 7900,
     "cover": "https://img2.591.com.tw/house/2025/01/13/173673858571367805.jpg!400x300.jpg",
     "url": "https://rent.591.com.tw/22301214",
-    "scrapedAt": "2026-11-06T04:56:00.388Z"
+    "scrapedAt": "2026-11-06T05:33:15.670Z"
   },
   "22301429": {
     "id": "22301429",
     "title": "可租補駁二崛江透天復古宅",
-    "price": 12500,
-    "cover": "https://img2.591.com.tw/house/2026/11/06/179393663826779502.jpg!400x300.jpg",
+    "price": 15000,
+    "cover": "https://img1.591.com.tw/house/2026/11/06/179393663826779502.jpg!400x300.jpg",
     "url": "https://rent.591.com.tw/22301429",
-    "scrapedAt": "2026-11-06T04:56:00.388Z"
+    "scrapedAt": "2026-11-06T05:33:15.670Z"
+  },
+  "22302131": {
+    "id": "22302131",
+    "title": "鹽埕老時光/駁二特區質感老宅/崛江駁二文青聚落",
+    "price": 15000,
+    "cover": "https://images.591.com.tw/index/house/newVersion/noImgBigNew.png",
+    "url": "https://rent.591.com.tw/22302131",
+    "scrapedAt": "2026-11-06T05:33:15.670Z"
   }
 }
